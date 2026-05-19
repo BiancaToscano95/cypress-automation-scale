@@ -1,29 +1,53 @@
-# Automação Cypress - Formulário de Contato
+# Cypress Automation - Scale Systems
 
-Projeto de automação E2E utilizando Cypress para validar o preenchimento do formulário de contato do site Scale.
+Projeto de automação de testes desenvolvido com Cypress.
+
+## Objetivo
+
+Este repositório contém:
+
+- Automação do formulário de contato do site da Scale Systems
+- Desafio técnico de gerenciamento de inscrições para eventos
+- Cenários BDD utilizando Gherkin
+- Exemplos de automação E2E com Cypress
+
+## Estrutura do Projeto
+
+```bash
+cypress/
+ ├── e2e/
+ │    ├── contato_scale.cy.js
+ │    ├── contato_scale.feature
+ │    ├── gerenciamento_evento.cy.js
+ │    ├── gerenciamento_evento.feature
+ │
+ ├── fixtures/
+ ├── support/
+```
 
 ## Tecnologias utilizadas
 
 - Cypress
 - JavaScript
-- Node.js
+- Gherkin / BDD
+- VS Code
+- Git e GitHub
 
-## Cenário automatizado
+## Cenários Automatizados
 
-O teste realiza:
-
-- Acesso ao site
-- Scroll até a seção de contato
+### Formulário de Contato
 - Preenchimento do formulário
-- Seleção do assunto
-- Upload de arquivo PDF
-- Validação dos campos preenchidos
+- Navegação até seção de contato
+- Validações básicas
 
-## Estrutura do projeto
+### Gerenciamento de Eventos
+- Validação de layout
+- Cadastro de participante
+- Validação de campos obrigatórios
+- Controle de vagas
+- Atualização da lista de inscritos
+- Remoção de participantes
 
-```bash
-cypress/
- ├── e2e/
- │    └── contato_scale.cy.js
- ├── fixtures/
- │    └── pdf automação.pdf
+## Observações
+
+Os testes do desafio técnico foram estruturados utilizando seletores sugeridos (`data-testid`), considerando que não foi disponibilizada uma aplicação funcional para execução.
